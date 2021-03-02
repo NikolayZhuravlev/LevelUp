@@ -1,0 +1,39 @@
+@import "libs/bootstrap-reboot.min";
+@import "libs/fonts";
+@import "base/variables";
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width: 1140px;
+    position: relative;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 1201px) {
+    .container {
+        width: 900px;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        width: 700px;
+    }
+}
+
+@media (max-width: 776px) {
+    .container {
+        width: 500px;
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        width: 85%;
+    }
+}
