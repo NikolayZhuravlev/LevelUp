@@ -1,6 +1,17 @@
 @import "libs/bootstrap-reboot.min";
 @import "libs/fonts";
 @import "base/variables";
+@import "blocks/promo";
+@import "blocks/title";
+@import "blocks/buttons";
+@import "blocks/composition";
+@import "blocks/items";
+@import "blocks/reviews";
+@import "blocks/scrollUp";
+@import "blocks/promo-2";
+@import "blocks/form-order";
+@import "blocks/form";
+@import "blocks/timer";
 
 * {
     font-family: 'Roboto', sans-serif;

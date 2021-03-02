@@ -1,0 +1,17 @@
+.composition {
+    min-height: 670px;
+    padding: 70px 0;
+    background: linear-gradient(to bottom right, rgb(128, 137, 175), rgb(168, 108, 59));
+    &__wrapper {
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__prod {
+        width: 245px;
+        img {
+            width: 100%;
+        }
+    }
+}

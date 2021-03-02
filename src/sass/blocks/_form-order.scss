@@ -1,0 +1,21 @@
+.form-order {
+    min-height: 670px;
+    padding: 70px 0;
+    background: linear-gradient(to bottom right, rgb(128, 137, 175), rgb(168, 108, 59));
+    &__timer {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__prod {
+        display: flex;
+    }
+    &__price {
+        display: flex;
+        flex-direction: column;
+    }
+}

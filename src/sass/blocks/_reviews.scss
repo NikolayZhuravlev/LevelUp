@@ -1,0 +1,52 @@
+.reviews {
+    position: relative;
+    min-height: 470px;
+    padding: 51px 0 65px 0;
+    .carousel {
+        width: 80%;
+    }
+    .slick-arrow {
+        position: absolute;
+        top: 12%;
+        border: none;
+        background-color: white;
+        &:active, &:focus {
+            outline: none;
+            border: none;
+        }
+        img {
+            width: 14px;
+            height: 46px;
+        }
+    }
+    .slick-prev {
+        left: 41%;
+        z-index: 2;
+    }
+    .slick-next {
+        right: 41%;
+    }
+}
+
+@media (max-width: 991px) {
+    .reviews {
+        .slick-prev {
+            left: 34%;
+        } 
+        .slick-next {
+            right: 34%;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .reviews {
+        padding: 30px 15px 10px;
+        .slick-prev {
+            left: 28%;
+        } 
+        .slick-next {
+            right: 28%;
+        }
+    }
+}
