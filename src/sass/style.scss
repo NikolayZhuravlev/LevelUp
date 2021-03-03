@@ -12,6 +12,8 @@
 @import "blocks/form-order";
 @import "blocks/form";
 @import "blocks/timer";
+@import "base/animation";
+@import "libs/slick";
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -23,6 +25,9 @@
 }
 a {
     text-decoration: none;
+    &:hover {
+        color: white;
+    }
 }
 
 @media (max-width: 1201px) {

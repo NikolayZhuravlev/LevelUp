@@ -2,8 +2,18 @@
     position: relative;
     min-height: 470px;
     padding: 51px 0 65px 0;
+    background: linear-gradient(to top right, rgb(205, 208, 223), rgb(202, 142, 94));
+    &__title {
+        color: black;
+        font-weight: 700;
+        font-size: 25px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 60px;
+    }
     .carousel {
         width: 80%;
+        margin: 0 auto;
     }
     .slick-arrow {
         position: absolute;

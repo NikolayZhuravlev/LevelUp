@@ -1,4 +1,33 @@
 .form {
     display: flex;
     flex-direction: column;
+    width: 400px;
+    height: 355px;
+    align-items: center;
+    background-color: rgba($color: #6d6767, $alpha: .8);
+    border: #363131 solid 1px;
+    border-radius: 0 0 5px 5px;
+    &__title {
+        padding-top: 8px;
+        text-align: center;
+        width: 100%;
+        height: 50px;
+        background-color: #28163e;
+        font-weight: 400;
+        font-size: 26px;
+        color: white;
+    }
+    input {
+        margin: 20px 0;
+        width: 80%;
+        height: 40px;
+        border-radius: 10px;
+        padding-left: 20px;
+        color: black;
+        font-size: 18px;
+        font-weight: 300;
+        &:nth-child(3) {
+            margin-bottom: 70px;
+        }
+    }
 }

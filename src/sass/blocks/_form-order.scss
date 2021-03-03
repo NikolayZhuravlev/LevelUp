@@ -8,14 +8,39 @@
         justify-content: center;
     }
     &__wrapper {
+        margin-top: 60px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
     }
     &__prod {
         display: flex;
+        align-items: center;
+        margin-right: 80px;
     }
     &__price {
+        margin-right: 30px;
         display: flex;
         flex-direction: column;
+        height: 200px;
+        width: 200px;
+        align-items: center;
+        font-weight: 700;
+        justify-content: space-around;
+    }
+    &__newPrice {
+        color: red;
+        font-size: 37px;
+        animation: heartbeat 3s ease infinite;
+    }
+    &__oldPrice {
+        color: #351d1d;;
+        font-size: 30px;
+        text-decoration: line-through;
+    }
+    &__img {
+        width: 250px;
+        img {
+            width: 100%;
+        }
     }
 }

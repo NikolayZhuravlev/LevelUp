@@ -6,8 +6,8 @@ $(document).ready(function(){
         slidesToShow: 3,
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrows/arrowLeft.png"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/arrows/arrowRight.png"></button>',
-        autoplay: false,
-        // autoplaySpeed: 2500,
+        autoplay: true,
+        autoplaySpeed: 1800,
         pauseOnHover: true,
         responsive: [
           {
@@ -50,72 +50,6 @@ $(document).ready(function(){
     return false;
   });
 
-//    //Modal
-
-//    $('[data-modal=consultation]').on('click', function() {
-//     $('.overlay, #consultation').fadeIn('slow');
-//   });
-  
-//   $('[data-modal=confidentiality]').on('click', function() {
-//     $('.overlay, #confidentiality').fadeIn('slow');
-//   });
-
-//   $('.modal__close').on('click', function() {
-//     $('.overlay, #consultation, #thanks, #confidentiality').fadeOut('slow');
-//   });
-
-//    //Validate
-
-//      // Валидация телефона jQuery
-//   //  jQuery.validator.addMethod('phonenu', function (value, element) {
-//   //   return this.optional(element) || /^\d{3}-?\d{3}-?\d{4}$/.test(value) || /^\d{3}?\d{3}?\d{4}$/.test(value);
-//   //   }, 'Введите номер в формате<br> 999-888-66-55 или 9998886655');
-
-//    function validate(form) {
-//     $(form).validate({
-//       rules: {
-//         name: {
-//           required: true,
-//           minlength: 2
-//         },
-//         phone: "required",
-//         email: {
-//           required: true,
-//           email: true
-//         },
-//         message: {
-//           required: true,
-//           minlength: 20
-//         }
-//       },
-//       messages: {
-//         name: {
-//           required: "Пожалуйста, введите своё имя",
-//           minlength: jQuery.validator.format("Введите не менее {0} символов!")
-//         },
-//         phone: {
-//           required: "Пожалуйста, введите свой номер<br> телефона!"
-//         },
-//         email: {
-//           required: "Пожалуйста, введите свою почту!",
-//           email: "Введите почтовый адрес почты<br> в формате name@mail.ru"
-//         },
-//         message:  {
-//           required: "Пожалуйста,введите сообщение",
-//           minlength: jQuery.validator.format("Введите не менее {0} символов!")
-//         }
-//       }
-//     });
-//   };
-
-//   validate('#consultation form');
-//   validate('#questions form');
-//   validate('#priceForm form');
-  
-//    //mask plagin
-
-//   $("input[name=phone]").mask("+7 (999) 999-99-99");
-
 //   $('form').submit(function(e) {
 //     e.preventDefault();
 //     let $form = $(this);
@@ -133,10 +67,6 @@ $(document).ready(function(){
 //     });
 //     return false;
 //   });
-
-// // Инициализация animation library
-
-// new WOW().init();
 
 //timer
 
