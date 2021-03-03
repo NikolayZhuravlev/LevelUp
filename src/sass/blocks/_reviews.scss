@@ -19,7 +19,6 @@
         position: absolute;
         top: 12%;
         border: none;
-        background-color: white;
         &:active, &:focus {
             outline: none;
             border: none;
@@ -32,9 +31,11 @@
     .slick-prev {
         left: 41%;
         z-index: 2;
+        background-color: #cbad9b;
     }
     .slick-next {
         right: 41%;
+        background-color: #cca993;
     }
 }
 

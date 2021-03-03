@@ -153,7 +153,7 @@
     opacity: 1;
     .carousel__title {
         margin-top: 14px;
-        font-size: 16px;
+        font-size: 20px;
         @media (max-width: 575px) {
             font-size: 14px;
         }
@@ -161,7 +161,7 @@
     .carousel__descr {
         margin-top: 2px;
         padding: 0;
-        font-size: 14px;
+        font-size: 16px;
         @media (max-width: 575px) {
             font-size: 12px;
         }

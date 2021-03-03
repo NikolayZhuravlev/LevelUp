@@ -3,11 +3,11 @@ $(document).ready(function(){
         infinite: true,
         centerMode: true,
         centerPadding: '60px',
-        slidesToShow: 3,
+        slidesToShow: 1,
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrows/arrowLeft.png"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/arrows/arrowRight.png"></button>',
         autoplay: true,
-        autoplaySpeed: 1800,
+        autoplaySpeed: 1700,
         pauseOnHover: true,
         responsive: [
           {
