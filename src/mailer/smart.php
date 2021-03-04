@@ -2,8 +2,6 @@
 
 $name = $_POST['name'];
 $phone = $_POST['phone'];
-$email = $_POST['email'];
-$message = $_POST['message'];
 
 // require_once('phpmailer/PHPMailerAutoload.php');
 require('phpmailer/PHPMailerAutoload.php');
@@ -16,7 +14,7 @@ $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.mail.ru';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'nikglopt@mail.ru';                 // Наш логин
-$mail->Password = 'glopt2021';                           // Наш пароль от ящика
+$mail->Password = '*****';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = '465';                                    // TCP port to connect to
  
@@ -34,9 +32,7 @@ $mail->Subject = 'Данные';
 $mail->Body    = '
 		Пользователь оставил данные <br> 
 	Имя: ' . $name . ' <br>
-	Номер телефона: ' . $phone . '<br>
-	E-mail: ' . $email . '<br>
-	Сообщение: ' . $message . '';
+	Номер телефона: ' . $phone . ' ';
 
 if(!$mail->send()) {
     return false;

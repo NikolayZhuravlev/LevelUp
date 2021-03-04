@@ -51,23 +51,17 @@ $(document).ready(function(){
     return false;
   });
 
-//   $('form').submit(function(e) {
-//     e.preventDefault();
-//     let $form = $(this);
-//     if(! $form.valid()) return false;
-//     $.ajax({
-//       type: "POST",
-//       url: "mailer/smart.php",
-//       data: $(this).serialize()
-//     }).done(function() {
-//       $(this).find("input").val("");
-//       $('#consultation, #questions, #priceForm').validate();
-//       $('#consultation').fadeOut();
-//       $('.overlay, #thanks').fadeIn('slow');
-//       $('form').trigger('reset');
-//     });
-//     return false;
-//   });
+  $('form').click(function(){
+    $.ajax({
+      type: "POST",
+      url: "mailer/smart.php",
+      data: $(this).serialize()
+    }).done(function() {
+      $(this).find("input").val("");
+      $('form').trigger('reset');
+    });
+    return false;
+  });
 
 //timer
 
@@ -107,7 +101,7 @@ function initializeClock(id, endtime) {
   }
  
   updateClock();
-  var timeinterval = setInterval(updateClock, 1000);
+  const timeinterval = setInterval(updateClock, 1000);
 }
  
 var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000); // for endless timer
