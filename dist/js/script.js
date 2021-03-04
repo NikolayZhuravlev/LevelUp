@@ -6,7 +6,7 @@ $(document).ready(function(){
         slidesToShow: 1,
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrows/arrowLeft.png"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/arrows/arrowRight.png"></button>',
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 1700,
         pauseOnHover: true,
         responsive: [
@@ -21,11 +21,12 @@ $(document).ready(function(){
             }
           },
           {
-            breakpoint: 480,
+            breakpoint: 575,
             settings: {
               arrows: false,
+              dots: true,
               centerMode: true,
-              centerPadding: '40px',
+              centerPadding: '0px',
               slidesToShow: 1,
               slidesToScroll: 1
             }

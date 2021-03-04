@@ -4,3 +4,21 @@
     font-weight: 700;
     font-size: 80px;
 }
+
+@media (max-width: 991px) {
+    .title {
+        font-size: 65px;
+    }
+}
+
+@media (max-width: 776px) {
+    .title {
+        font-size: 58px;
+    }
+}
+
+@media (max-width: 575px) {
+    .title {
+        font-size: 46px;
+    }
+}

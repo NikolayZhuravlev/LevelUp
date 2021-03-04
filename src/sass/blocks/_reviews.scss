@@ -2,7 +2,7 @@
     position: relative;
     min-height: 470px;
     padding: 51px 0 65px 0;
-    background: linear-gradient(to top right, rgb(205, 208, 223), rgb(202, 142, 94));
+    background: linear-gradient(to top right,#e3dda3,#ded1c7);
     &__title {
         color: black;
         font-weight: 700;
@@ -31,11 +31,25 @@
     .slick-prev {
         left: 41%;
         z-index: 2;
-        background-color: #cbad9b;
+        background-color: #e1d7b5;
     }
     .slick-next {
         right: 41%;
-        background-color: #cca993;
+        background-color: #e0d6b9;;
+    }
+}
+
+@media (max-width: 1201px) {
+    .reviews {
+        .slick-arrow {
+            top: 10%;
+        }
+        .slick-prev {
+            left: 36%;
+        } 
+        .slick-next {
+            right: 36%;
+        }
     }
 }
 
@@ -50,14 +64,68 @@
     }
 }
 
+@media (max-width: 776px) {
+    .reviews {
+        &__title {
+            margin-bottom: 35px;
+            font-size: 23px;
+        }
+        .slick-arrow {
+            top: 8%;
+        }
+        .slick-prev {
+            left: 26%;
+        } 
+        .slick-next {
+            right: 26%;
+        }
+    }
+}
+
 @media (max-width: 575px) {
     .reviews {
+        &__title {
+            font-size: 19px;
+            margin-bottom: 25px;
+        }
         padding: 30px 15px 10px;
         .slick-prev {
             left: 28%;
         } 
         .slick-next {
             right: 28%;
+        }
+        .slick-dots {
+            margin-top: 20px;
+            padding-left: 0;
+            display: flex;
+            justify-content: center;
+            li {
+                display: flex;
+                margin: 0 2px;
+                button {
+                    background-color: $main-color;
+                    border-radius: 100%;
+                    width: 30px;
+                    height: 30px;
+                    font-weight: 400;
+                    font-size: 15px;
+                    &:active {
+                        outline: none;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            } 
+        }
+        .slick-active {
+            button {
+                box-shadow: 0 0 0 3px rgb(207, 162, 14);
+            }
+        }
+        .slick-track {
+            min-height: 300px;
         }
     }
 }

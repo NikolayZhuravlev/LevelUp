@@ -1,7 +1,7 @@
 .form-order {
     min-height: 670px;
     padding: 70px 0;
-    background: linear-gradient(to bottom right, rgb(128, 137, 175), rgb(168, 108, 59));
+    background: linear-gradient(to bottom right,#a1a1a5,#e6dede);
     &__timer {
         margin-top: 30px;
         display: flex;
@@ -41,6 +41,57 @@
         width: 250px;
         img {
             width: 100%;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .form-order {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__prod {
+            margin-right: 0;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+@media (max-width: 776px) {
+    .form-order {
+        padding: 50px 0;
+        &__img {
+            width: 200px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .form-order {
+        padding: 37px 0;
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__price {
+            margin-right: 15px;
+            width: 100px;
+            height: 100px;
+
+        }
+        &__newPrice {
+            font-size: 21px;
+        }
+        &__oldPrice {
+            font-size: 16px;
+        }
+        &__img {
+            width: 140px;
+        }
+        &__prod {
+            margin-right: 0;
+            margin-bottom: 60px;
         }
     }
 }
